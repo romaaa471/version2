@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/api/orders",
+      "destination": "/api/orders.js"
+    },
+    {
+      "source": "/api/orders/:id",
+      "destination": "/api/orders.js"
+    },
+    {
+      "source": "/api/menu",
+      "destination": "/api/menu.js"
+    },
+    {
+      "source": "/api/health",
+      "destination": "/api/health.js"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
+
